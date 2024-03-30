@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-	'title' => 'Ps14 Modulor',
-	'description' => 'TYPO3 Extension serves as a template for TYPO3 modules',
+	'title' => 'Ps14 Accordion',
+	'description' => 'The Accordion Extension serves as a module that easily accommodates child elements (body text) and sub-child elements (tt_content).',
 	'category' => 'distribution',
 	'author' => 'Christian Pschorr',
 	'author_email' => 'pschorr.christian@gmail.com',
@@ -10,7 +10,7 @@ $EM_CONF[$_EXTKEY] = [
 	'state' => 'beta',
 	'uploadfolder' => 0,
 	'clearCacheOnLoad' => 0,
-	'version' => '1.0.0',
+	'version' => '2.0.0',
 	'constraints' => [
 		'depends' => [
 			'typo3' => '12.0.0-12.4.99',
