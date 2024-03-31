@@ -4,14 +4,17 @@
 		<header/>
 		<body>
 			<trans-unit id="title">
-				<target>Ps14 Accordion</target>
+				<target>Ps14 Akkordeon</target>
 			</trans-unit>
 			<trans-unit id="description">
-				<target>Accordion module for displaying child elements including text or sub-content elements.</target>
+				<target>Akkordeon-Modul zur Anzeige von Unterelementen einschließlich Text oder Unterinhalts-Elementen.</target>
 			</trans-unit>
 
 			<trans-unit id="elements.record-type.default">
 				<target>Default</target>
+			</trans-unit>
+			<trans-unit id="elements.record-type.records">
+				<target>Inhaltselemente</target>
 			</trans-unit>
 		</body>
 	</file>

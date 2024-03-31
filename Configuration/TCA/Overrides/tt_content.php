@@ -29,20 +29,6 @@ $GLOBALS['TCA']['tt_content']['types']['ps14_accordion']['columnsOverrides']['bo
 	'richtextConfiguration' => 'ps14Default',
 ];
 
-// Crop-Varianten fuer Image-Feld
-$GLOBALS['TCA']['tt_content']['types']['ps14_accordion']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] = \Ps14\Site\Service\TcaService::getCropVariants(
-	[
-		'thumbnail' => [
-			'allowedAspectRatios' => ['16_9', '4_3'],
-			'selectedRatio' => '16_9'
-		],
-		'fullsize' => [
-			'allowedAspectRatios' => ['21_9', 'NaN'],
-			'selectedRatio' => '21_9'
-		]
-	]
-);
-
 // ---------------------------------------------------------------------------------------------------------------------
 // Elements TCA anpassen
 
@@ -55,6 +41,10 @@ $GLOBALS['TCA']['tt_content']['types']['ps14_accordion']['columnsOverrides']['tx
 					[
 						'label' => 'LLL:EXT:ps14_accordion/Resources/Private/Language/locallang_tca.xlf:elements.record-type.default',
 						'value' => 'ps14_accordion_default'
+					],
+					[
+						'label' => 'LLL:EXT:ps14_accordion/Resources/Private/Language/locallang_tca.xlf:elements.record-type.records',
+						'value' => 'ps14_accordion_records'
 					],
 				],
 				'default' => 'ps14_accordion_default'
@@ -71,7 +61,16 @@ $GLOBALS['TCA']['tt_content']['types']['ps14_accordion']['columnsOverrides']['tx
 			'showitem' => \Ps14\Site\Service\TcaService::getShowitem(
 				['general', 'appearance', 'access'],
 				[
-					'general' => '--palette--;;general, --palette--;;header, description, media,'
+					'general' => '--palette--;;general, --palette--;;header, description,'
+				],
+				'tx_foundation_domain_model_elements'
+			)
+		],
+		'ps14_accordion_records' => [
+			'showitem' => \Ps14\Site\Service\TcaService::getShowitem(
+				['general', 'appearance', 'access'],
+				[
+					'general' => '--palette--;;general, --palette--;;header, content,'
 				],
 				'tx_foundation_domain_model_elements'
 			)
