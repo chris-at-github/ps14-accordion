@@ -61,7 +61,7 @@ $GLOBALS['TCA']['tt_content']['types']['ps14_accordion']['columnsOverrides']['tx
 			'showitem' => \Ps14\Site\Service\TcaService::getShowitem(
 				['general', 'appearance', 'access'],
 				[
-					'general' => '--palette--;;general, --palette--;;header, description,'
+					'general' => '--palette--;;general, --palette--;;header, tx_accordion_active, description,'
 				],
 				'tx_foundation_domain_model_elements'
 			)
@@ -70,7 +70,7 @@ $GLOBALS['TCA']['tt_content']['types']['ps14_accordion']['columnsOverrides']['tx
 			'showitem' => \Ps14\Site\Service\TcaService::getShowitem(
 				['general', 'appearance', 'access'],
 				[
-					'general' => '--palette--;;general, --palette--;;header, content,'
+					'general' => '--palette--;;general, --palette--;;header, tx_accordion_active, content,'
 				],
 				'tx_foundation_domain_model_elements'
 			)

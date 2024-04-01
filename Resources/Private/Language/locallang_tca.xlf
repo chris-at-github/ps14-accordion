@@ -10,6 +10,9 @@
 				<source>Accordion module for displaying child elements including text or sub-content elements.</source>
 			</trans-unit>
 
+			<trans-unit id="elements.active">
+				<source>Active</source>
+			</trans-unit>
 			<trans-unit id="elements.record-type.default">
 				<source>Default</source>
 			</trans-unit>
