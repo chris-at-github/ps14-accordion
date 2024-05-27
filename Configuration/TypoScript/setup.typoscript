@@ -20,5 +20,19 @@ tt_content {
 			30 = EXT:ps14_foundation/Resources/Private/Partials/
 			40 = EXT:ps14_site/Resources/Private/Partials/
 		}
+
+		dataProcessing {
+			200 = Ps14\Foundation\DataProcessing\ModuleProcessor
+			200 {
+				importCss {
+					10 = /assets/css/modules/accordion.css
+				}
+
+				importJs {
+					10 = /assets/js/components/collapse.js
+				}
+			}
+		}
+	}
 	}
 }
